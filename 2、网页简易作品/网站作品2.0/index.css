@@ -1,0 +1,76 @@
+ body {
+	background-image: url(images/1.png);
+             
+}
+    a {
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.picture{
+	position: absolute;
+	top: 20%;
+	left: 20%;
+                   }
+
+
+a:link {
+	text-decoration: none;
+	color: #CCC;
+	font-weight: bold;
+}
+a:visited {
+	text-decoration: none;
+	color: #D4D4D4;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+//以下是图片转换
+  #album{/*相册*/
+    position:relative;
+    width:400px;
+    height:300px;
+   border:10px #CCCCCC solid ;/*相册边框*/
+    overflow:hidden;/*隐藏tip*/
+  }
+  #album dt {/*相册的内容显示区，包含相片与下面的翻页栏*/
+    margin:0;/*去除浏览器的默认设置*/
+    padding:0;/*去除浏览器的默认设置*/
+    width:400px;
+    height:300px;
+    overflow:hidden;/*重点，让每次只显示一张图片*/
+  }
+  #album img {
+    border:0px;
+  }
+  #album dd {/*翻页栏*/
+    position:absolute;
+    right:0px;
+    bottom:10px;
+  }
+  #album a {
+    display:block;/*让其拥有盒子模型*/
+    float:left;
+    margin-right:10px;/*错开格子*/
+    width:15px;/*呈正方形*/
+    height:15px;
+    line-height:15px;
+    text-align:center;/*居中显示*/
+    text-decoration:none;/*消除下划线*/
+    color:#808080;
+ background:transparent url(images/INDEX_4.GIF) no-repeat -15px 0;
+  }
+  #album a:hover ,#album a.hover{
+    color:#F8F8F8;
+   background-position:0 0;
+  }
