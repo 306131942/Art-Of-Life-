@@ -1,0 +1,35 @@
+.myanimation {
+    /* "myfirst" 动画捆绑到 .myanimation*/
+    animation:myfirst 2s;
+    -webkit-animation:myfirst 5s; /* Safari and Chrome */
+}
+/*指定一个CSS样式和动画将逐步从目前的样式更改为新的样式。*/
+@keyframes myfirst
+{
+/*opacity针对高版本及主流浏览器0~1，第二个兼容ie低版本用的0~100*/
+    0%   {opacity:0;
+        filter:alpha(opacity=0); /* For IE8 and earlier */
+    }
+
+    50%  {opacity:0.5;
+        filter:alpha(opacity=50); /* For IE8 and earlier */
+    }
+
+    100% {opacity:1;
+        filter:alpha(opacity=100); /* For IE8 and earlier */
+    }
+}
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    0%   {opacity:0;
+        filter:alpha(opacity=40); /* For IE8 and earlier */
+    }
+
+    50%  {opacity:0.5;
+        filter:alpha(opacity=50); /* For IE8 and earlier */
+    }
+
+    100% {opacity:1;
+        filter:alpha(opacity=100); /* For IE8 and earlier */
+    }
+}

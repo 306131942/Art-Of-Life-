@@ -1,0 +1,178 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "微软雅黑";
+}
+
+/*导航*/
+ /*链接伪类顺序 LoVe HA*/
+#menu-nav .navbar-collapse a:visited{
+    color: #fff;
+}
+#menu-nav .navbar-collapse a:hover{
+    /*background-color: #3c763d;*/
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+
+/*简历主要内容部分*/
+/*动画CSS*/
+#part11 img{
+ /*position:fixed;*/
+    display:none;
+}
+
+/*设置每页的高度和背景颜色*/
+.container-fluid .row{
+    height: 640px;
+    padding-top:100px;
+}
+.container-fluid #part1{
+    background-color: #e5e5e5;
+}
+.container-fluid #part2{
+    background-color: #f7ecb5;
+}
+.container-fluid #part3{
+    background-color: #f2dede;
+}
+.container-fluid #part4{
+    background-color:#afd9ee;
+}
+.container-fluid #part5{
+    background-color:#c1e2b3;
+    height: 600px;
+}
+
+
+/* 图片轮播部分 */
+.carousel {
+    height: 530px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.carousel .item {
+    height: 530px;
+    background-color: #000000;
+}
+.carousel .item img {
+    width: 100%;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/*设置图片中文字的位置和格式*/
+.carousel-caption {
+    position: absolute;
+    left: 7%;
+    top: 10%;
+    right: 40%;
+    z-index: 10;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    color: #000000;
+}
+
+#h_2 .carousel-caption{
+    left: 50%;
+    top: 8%;
+    right: 7%;
+    color: #d9edf7;
+}
+#h_3 .carousel-caption{
+    left: 5%;
+    top: 5%;
+    right: 65%;
+    color: #d9edf7;
+    padding-top: -2px;
+}
+#h_4 .carousel-caption{
+
+    left: 50%;
+    top: 5%;
+    right: 5%;
+    color: #000000;
+}
+
+/*底部*/
+
+#bottom-index-1{
+    height: 80px;
+    background-color: #222222;
+    color: #ffffff;
+}
+#bottom-index-1 p{
+    padding-top: 30px;
+}
+
+
+/*回到顶部*/
+#top_div{
+    position:fixed;
+    bottom:100px;
+    right:80px;
+    display:none;
+}
+
+#top_div img{
+    height: 25px;
+    width: 25px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, height 0.5s;
+}
+#top_div img:hover{
+    height: 35px;
+    width: 35px;
+}
+
+
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+
+    .summary {
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+
+    .carousel {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .carousel .item {
+        height: 300px;
+    }
+
+    .carousel img {
+        min-height: 300px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .feature-heading {
+        font-size: 34px;
+    }
+
+    .feature-heading .text-muted {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    .feature-heading {
+        margin-top: 120px;
+    }
+}

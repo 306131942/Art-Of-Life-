@@ -1,0 +1,142 @@
+
+*{
+	margin:0;
+	padding:0;}
+	
+body{
+	background:rgb(228,117,16);}
+	
+#header1{
+	position:fixed;
+		width:100%;
+		z-index:2;
+	}
+	
+header{
+  	position:relative;
+	top:0;
+	left:0;
+	height:60px;
+	margin:0;
+	background:rgb(220,87,18);
+	box-shadow:0 12px 8px -9px #555;}
+	
+.aside1{
+	position:fixed;
+	top:40%;
+	right:4%;
+	background:#060;
+	border-radius:6px;
+	height:250px;
+	box-shadow:1px 8px 10px #111;}
+
+
+	
+header section#title{
+	position:absolute;
+	width:185px;
+	height:60px;
+	left:120px;
+	top:0;}
+	
+.multi_drop_menu{
+	position:absolute;
+	left:300px;
+	top:34px;
+	}
+	
+header h1{
+	padding:3px 9px 0;
+	color:#FFF;
+	margin:5px 0 0 0;}
+	
+header h3{
+	padding:0 12px;
+	color:#FFF;}
+	
+
+footer{
+	position:relative;
+	height:120px;
+	margin:0 0 5px;
+	background:rgb(220,87,18);
+	box-shadow:0 12px 8px -9px #555;}
+footer.footer1{
+	position:absolute;
+	top:30px;
+	left:60%;}
+	
+/*
+菜单
+*/
+
+.multi_drop_menu a {
+	color:#FFF; 							/* text color */
+	background-color:rgb(28,120,135); 					/* background color */
+	padding:.2em 1em;						/* padding around link text */
+	border-width:3px; 						/* divider width */
+	border-color:transparent; 				/* divider color - can be 'transparent' */
+	}  					
+.multi_drop_menu a:hover {
+	color:#fff; 							/* hover text color */
+	background-color:rgb(38,188,213);					/* hover background color */
+	}
+.multi_drop_menu li a:active {
+	background:rgb(38,188,213);						/* b/g hilite when clicked */
+	color:#000;								/* text color hilite when clicked */
+	background-clip:padding-box;			/* prevents border hiliting */
+	}	
+.multi_drop_menu li ul {width:9em;} 		/* width of 2nd, 3rd level menus */
+.multi_drop_menu li li a {   
+	border-right-style:none;				
+	border-top-style:solid;					
+	}
+.multi_drop_menu li li li a {   
+	border-left-style:solid;
+}
+
+/* "MECHANICAL" STYLINGS - ADJUST WITH CARE! */
+/* menu mechanics */
+/* level 1 */
+.multi_drop_menu * {margin:0; padding:0;}
+.multi_drop_menu ul {float:left;} /* forces ul to enclose floated li elements */
+.multi_drop_menu li {  
+	float:left; /* makes menu horizontal */
+	list-style-type:none; /* removes default bullets off lists */
+	position:relative; /* position context for child list */
+	}
+.multi_drop_menu li a {   
+	display:block; /* makes link fill li */
+	border-right-style:solid; /* adds a right border on the links */
+	background-clip:padding-box; /* background only under padding, not border */  
+	text-decoration:none; /* removes link underlining */
+	}
+.multi_drop_menu li:last-child a {   
+	border-right-style:none;
+	}
+/* level 2*/
+.multi_drop_menu li ul {
+	display:none; /* hides levels 2, 3, etc. */
+	position:absolute; /* position relative to parent menu */
+	left:0; /* aligns left of sub-menu to parent */
+	top:100%; /* aligns to bottom of parent */
+	}
+.multi_drop_menu li:hover > ul {
+	display:block; /* displays menu when parent hovered */
+	}
+.multi_drop_menu li li {
+	position:relative; /* position context for child list */
+	float:none; /* kills inherited float - makes list stack */
+	}
+	
+nav.multi_drop_menu > ul  > li:first-child  > a {
+	border-top-left-radius:8px;
+	border-bottom-left-radius:0px;}
+nav.multi_drop_menu >ul >  li:last-child > a {
+	border-top-right-radius:0px;
+	border-bottom-right-radius:8px;}
+
+
+	
+	
+
